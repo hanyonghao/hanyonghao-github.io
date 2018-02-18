@@ -1,0 +1,102 @@
+/* 用来隐藏一些初始化前的Vue元素 */
+[v-cloak] { display: none; }
+
+
+/* PC下定死一个尺寸 */
+.g-plat-pc { font-size: 60px !important; /*no*/ }
+
+
+/* 细线边框 */
+.g-dpr-1 .g-border-1px { border-width: 1px !important; /*no*/ }
+.g-dpr-2 .g-border-1px { border-width: 0.5px !important; /*no*/ }
+.g-dpr-1 .g-border-2px { border-width: 2px !important; /*no*/ }
+.g-dpr-2 .g-border-2px { border-width: 1px !important; /*no*/ }
+
+
+/* 跳页过渡效果 */
+.g-slide-left-enter,
+.g-slide-right-leave-active {
+	opacity: 0;
+	left: 100%;
+}
+
+.g-slide-left-leave-active,
+.g-slide-right-enter {
+	opacity: 0;
+	left: -100%;
+}
+
+.g-fade-leave-active,
+.g-fade-enter {
+	opacity: 0;
+}
+
+/* 清浮动 */
+.g-clearfix:after {
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: '.';
+}
+
+
+/* 两端对齐 */
+.g-justify-align {
+	text-align: justify;
+	font-size: 0;
+}
+
+.g-justify-align:after {
+	width: 100%;
+	height: 0;
+	margin: 0;
+	display: inline-block;
+	overflow: hidden;
+	content: '';
+}
+
+.g-justify-align > * {
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+/* 单行文本，如有超出则以省略号结尾 */
+.g-singleline-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/* 垂直居中 */
+.g-valign-mid {
+	vertical-align: middle;
+}
+
+
+/* 换行符自动换行 */
+.g-auto-break {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+
+/* 覆盖范围 */
+.g-full-screen {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.g-full-block {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

@@ -1,0 +1,55 @@
+html {
+	background: #f8f8f8;
+}
+body {
+	margin: 0;
+	font-size: 24px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: none;
+	line-height: 1;
+	word-wrap: break-word;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, th, td, input, button {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: inherit;
+}
+li { list-style-type: none; }
+img {
+	border: 0;
+	vertical-align: middle;
+}
+a { text-decoration: none; }
+
+body, input, textarea, button { font-family: Helvetica; }
+input {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+input[type=checkbox] { -webkit-appearance: checkbox; }
+input[type=submit], input[type=button] { border: none; }
+input[disabled] { opacity: 1; }
+input:focus, textarea:focus, button { outline: none; }
+
+
+/* 解决Chrome文本框自动填充后显示黄色背景问题 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+
+/* placeholder默认颜色 */
+input::-webkit-input-placeholder { color: #b4b5b6 !important; }
+input::-moz-placeholder { color: #b4b5b6 !important; }
+input:-ms-input-placeholder { color: #b4b5b6 !important; }
+
+textarea::-webkit-input-placeholder { color: #b4b5b6 !important; }
+textarea::-moz-placeholder { color: #b4b5b6 !important; }
+textarea:-ms-input-placeholder { color: #b4b5b6 !important; }
+
+button { user-select: none; }
